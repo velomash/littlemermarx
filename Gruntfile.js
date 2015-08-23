@@ -1,11 +1,21 @@
 'use strict';
 
 module.exports = function (grunt) {
-    require('time-grunt')(grunt);
-    require('load-grunt-config')(grunt);
+    require('load-grunt-config')(grunt, {
+    	data: {
+	        nodedir: 'node_modules',
+	        srcdir: 'src',
+	        tmpdir: '.tmp',
+	        dist: 'content/themes/existential',
+	        srcfiles: {
+	            js: ['./src/js/**/*.js'],
+	            less: ['./src/less/main.less']
+	        }
+    	}
+    });
 
-    grunt.registerTask('default', []);
-    grunt.registerTask('serve', []);
-    grunt.registerTask('build', []);
-    grunt.registerTask('deploy', []);
+    grunt.registerTask('default', ['serve']);
+    grunt.registerTask('serve', ['clean:dev', 'less:dev', 'copy:js', 'copy:php', 'copy:assets', 'shell:dev', 'php:dev', 'watch:dev']);
+    grunt.registerTask('build', ['clean:prod', 'less:prod', 'copy:js', 'copy:prod', 'copy:assets']);
+    grunt.registerTask('deploy', ['build', 'rsync:prod']);
 };
