@@ -15,23 +15,30 @@
  */
  
 // Include local configuration
-if (file_exists(dirname(__FILE__) . '/local-config.php')) {
-	include(dirname(__FILE__) . '/local-config.php');
-}
+// if (file_exists(dirname(__FILE__) . '/local-config.php')) {
+// 	include(dirname(__FILE__) . '/local-config.php');
+// 	define( 'WP_LOCAL_DEV', true );
+// } else {
+// 	// Global DB config
+// 	if (!defined('DB_NAME')) {
+// 		define('DB_NAME', 'littlemermarx_wp');
+// 	}
+// 	if (!defined('DB_USER')) {
+// 		define('DB_USER', 'root');
+// 	}
+// 	if (!defined('DB_PASSWORD')) {
+// 		define('DB_PASSWORD', 'root');
+// 	}
+// 	if (!defined('DB_HOST')) {
+// 		define('DB_HOST', 'localhost');
+// 	}
+// }
 
-// Global DB config
-if (!defined('DB_NAME')) {
 	define('DB_NAME', 'littlemermarx_wp');
-}
-if (!defined('DB_USER')) {
-	define('DB_USER', 'root');
-}
-if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', 'root');
-}
-if (!defined('DB_HOST')) {
-	define('DB_HOST', 'localhost');
-}
+	define('DB_USER', 'littlemermarx');
+	define('DB_PASSWORD', 'V1ct0rmy');
+	define('DB_HOST', 'localhost:8889');
+
 
 /** Database Charset to use in creating database tables. */
 if (!defined('DB_CHARSET')) {
