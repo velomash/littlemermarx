@@ -26,14 +26,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
-
-			<!-- header -->
 			<header>
-
 				<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img"> -->
 				<h1><?php bloginfo('name'); ?></h1>
-
 			</header>
-			<!-- /header -->

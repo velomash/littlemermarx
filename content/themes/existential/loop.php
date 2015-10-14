@@ -1,21 +1,14 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<!-- post thumbnail -->
-		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
-			</a>
-		<?php endif; ?>
-		<!-- /post thumbnail -->
-
 		<a class="post-title" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-			<h2><?php the_title(); ?></h2>
-			<?php edit_post_link(); ?>
-			<time><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></time>
+			<div class="container">
+				<?php the_first_category_link(); ?>
+				<h3><?php the_title(); ?></h3>
+				<time><?php the_time('M j, Y'); ?></time>
+			</div>
 		</a>
-
-		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+		<?php edit_post_link(); ?>
 	</article>
 
 <?php endwhile; ?>

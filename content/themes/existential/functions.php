@@ -291,6 +291,14 @@ function enable_threaded_comments()
     }
 }
 
+function the_first_category_link()
+{
+    $categories = get_the_category();
+    if (!empty($categories) && $categories[0]->name != 'Uncategorized') {
+        echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+    }
+}
+
 // Custom Comments Callback
 function html5blankcomments($comment, $args, $depth)
 {
