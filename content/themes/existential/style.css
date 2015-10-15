@@ -6791,8 +6791,26 @@ body > header h1 {
   color: #f5f2ee;
   text-shadow: 1px 1px 1px #333333;
 }
-.home .post .post-title {
+.post-snippet .post-title {
+  margin: 1.5em 0 0.5em 0;
+}
+.post-snippet .post-title .title {
+  color: #333333;
+  text-shadow: 1px 1px 0px #f5f2ee;
+}
+.post-snippet .post-title .title time {
   display: block;
-  background-color: #ffc70e;
+  text-shadow: none;
+  color: #2abdae;
+  font-family: "Cabin", sans-serif;
+  font-size: 12px;
+  margin-top: 0.5em;
+}
+.post-snippet .post-title .category {
+  float: right;
+  color: #333333;
+  text-shadow: 1px 1px 0px #f5f2ee;
+  font-size: 18px;
+  line-height: 28px;
 }
 /*# sourceMappingURL=style.css.map */

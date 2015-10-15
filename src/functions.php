@@ -295,7 +295,20 @@ function the_first_category_link()
 {
     $categories = get_the_category();
     if (!empty($categories) && $categories[0]->name != 'Uncategorized') {
-        echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+        echo '<a class="category" href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+    }
+}
+
+function the_post_image_collage()
+{
+    $media = get_attached_media( 'image', get_the_ID() );
+    for ($i = 0; $i <= 5; $i++) {
+        print_r($media[$i]);
+        if ($media[$i]) {
+            echo '<div class="image">';
+            echo the_attachment_link($media[$i]['ID']);
+            echo '</div>';
+        }
     }
 }
 
