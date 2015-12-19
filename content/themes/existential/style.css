@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Cabin");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Cabin");
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -1174,7 +1174,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Lobster", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   line-height: 1.1;
   color: #333333;
@@ -6782,35 +6782,52 @@ body {
   background-color: #f5f2ee;
 }
 body > header {
-  text-align: center;
-  border-bottom: 1px solid #176a61;
-  background-color: #2abdae;
+  border-bottom: 2px solid #2abdae;
 }
 body > header h1 {
-  line-height: 3em;
-  color: #f5f2ee;
-  text-shadow: 1px 1px 1px #333333;
+  line-height: 1.5em;
+  color: #333333;
+  margin: 0.7em 0 0.5em;
 }
 .post-snippet .post-title {
-  margin: 1.5em 0 0.5em 0;
+  padding: 11px;
+}
+.post-snippet .post-title:before,
+.post-snippet .post-title:after {
+  content: " ";
+  display: table;
+}
+.post-snippet .post-title:after {
+  clear: both;
+}
+.post-snippet .post-title:before,
+.post-snippet .post-title:after {
+  content: " ";
+  display: table;
+}
+.post-snippet .post-title:after {
+  clear: both;
 }
 .post-snippet .post-title .title {
+  float: left;
   color: #333333;
   text-shadow: 1px 1px 0px #f5f2ee;
 }
-.post-snippet .post-title .title time {
+.post-snippet .post-title .info {
+  float: right;
+}
+.post-snippet .post-title .info .category {
+  color: #333333;
+  text-shadow: 1px 1px 0px #f5f2ee;
+  font-size: 18px;
+  line-height: 28px;
+}
+.post-snippet .post-title .info time {
   display: block;
   text-shadow: none;
   color: #2abdae;
   font-family: "Cabin", sans-serif;
   font-size: 12px;
   margin-top: 0.5em;
-}
-.post-snippet .post-title .category {
-  float: right;
-  color: #333333;
-  text-shadow: 1px 1px 0px #f5f2ee;
-  font-size: 18px;
-  line-height: 28px;
 }
 /*# sourceMappingURL=style.css.map */

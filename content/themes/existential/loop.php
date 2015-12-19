@@ -3,14 +3,11 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class('post-snippet'); ?>>
 		<h3 class="post-title">
 			<div class="container">
-				<?php the_first_category_link(); ?>
-				<a class="title" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_title(); ?>
-					<time><?php the_time('M j, Y'); ?></time>
-				</a>
+				<a class="title" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				<div class="info"><?php the_first_category_link(); ?><time><?php the_time('M j, Y'); ?></time></div>
 			</div>
 		</h3>
-		<div class="container">
+		<div class="image-container">
 			<?php the_post_image_collage(); ?>
 			<?php edit_post_link(); ?>
 		</div>
