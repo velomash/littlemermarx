@@ -26,9 +26,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-			<header>
-				<div class="container">
+			<header class="main">
 					<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img"> -->
 					<h1><?php bloginfo('name'); ?></h1>
-				</div>
 			</header>

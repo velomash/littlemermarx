@@ -1,19 +1,19 @@
 module.exports = {
-	less: {
+	styles: {
 		files: ['src/less/**/*.less'],
 		tasks: ['less:dev'],
 		options: {
 			livereload: true
 		}
 	},
-	js: {
+	scripts: {
 		files: ['src/js/**/*.js'],
 		tasks: ['copy:js'],
 		options: {
 			livereload: true
 		}
 	},
-	js: {
+	markup: {
 		files: ['src/**/*.php'],
 		tasks: ['copy:php'],
 		options: {
