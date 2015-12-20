@@ -112,6 +112,11 @@ function html5blank_conditional_scripts()
     }
 }
 
+// Load HTML5 Blank styles
+function html5blank_styles()
+{
+}
+
 // Register HTML5 Blank Navigation
 function register_html5_menu()
 {
