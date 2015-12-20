@@ -3,21 +3,21 @@ module.exports = {
 		files: ['src/less/**/*.less'],
 		tasks: ['less:dev'],
 		options: {
-			livereload: true
+			livereload: 35729
 		}
 	},
 	scripts: {
 		files: ['src/js/**/*.js'],
 		tasks: ['copy:js'],
 		options: {
-			livereload: true
+			livereload: 35729
 		}
 	},
 	markup: {
 		files: ['src/**/*.php'],
 		tasks: ['copy:php'],
 		options: {
-			livereload: true
+			livereload: 35729
 		}
 	}
 };
