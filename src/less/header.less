@@ -1,11 +1,30 @@
 header.main {
-    text-align: center;
-	border-bottom: 2px solid blue;
+    background-color: @brand-light;
+    border-bottom: 2px solid @brand-gold;
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        .clearfix();
+    }
 	h1 {
-		line-height: 1.5em;
-		color: #333333;
-		margin: 0.7em 0 0.5em;
+        display: block;
+        float: left;
+        width: 324px;
+        height: 100px;
+        overflow: hidden;
+        text-indent: -999px;
+        margin: 0;
+		.image-2x('./assets/littleMermarxScript.png', 324px, 100px);
 	}
+    nav {
+        text-align: right;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding-top: 60px;
+            padding-right: 18px;
+        }
+    }
 }
 
 

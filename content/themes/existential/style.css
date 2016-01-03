@@ -339,12 +339,56 @@ table {
   border-spacing: 0;
 }
 header.main {
-  text-align: center;
-  border-bottom: 2px solid blue;
+  background-color: #f5f2ee;
+  border-bottom: 2px solid #ffc70e;
+}
+header.main .container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: inline-block;
+  /* start commented backslash hack \*/
+  display: block;
+  /* close commented backslash hack */
+}
+header.main .container:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html header.main .container {
+  height: 1%;
 }
 header.main h1 {
-  line-height: 1.5em;
-  color: #333333;
-  margin: 0.7em 0 0.5em;
+  display: block;
+  float: left;
+  width: 324px;
+  height: 100px;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 0;
+  background-image: url(./assets/littleMermarxScript.png);
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  header.main h1 {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url(./assets/littleMermarxScript@2x.png);
+    background-size: 324px 100px;
+  }
+}
+header.main nav {
+  text-align: right;
+}
+header.main nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 60px;
+  padding-right: 18px;
+}
+.home article {
+  padding: 24px;
 }
 /*# sourceMappingURL=style.css.map */
