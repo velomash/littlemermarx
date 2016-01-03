@@ -2,18 +2,49 @@
 
 .home {
     article {
+        padding-bottom: 12px;
         .post-title {
-            text-align: center;
+            margin: 0;
+            padding: 36px 24px 12px;
+            .title {
+                display: inline-block;
+                color: @brand-dark;
+                font-size: 24px;
+            }
+            .category, time {
+                float: right;
+                position: relative;
+                top: 7px;
+                color: @brand-dark;
+                font-size: 14px;
+            }
         }
         .image-container {
             display: flex;
             padding-right: 24px;
             figure {
                 flex: 1;
-                padding-bottom: 30%;
+                padding-bottom: 18%;
                 margin-left: 24px;
                 background-size: cover;
                 background-position: center;
+            }
+            @media (min-width: 800px) and (max-width: 1024px) {
+                figure {
+                    padding-bottom: 22%;
+                }
+                .image-5 {
+                    display: none;
+                }
+            }
+            @media (min-width: 300px) and (max-width: 799px) {
+                figure {
+                    padding-bottom: 28%;
+                }
+                .image-4,
+                .image-5 {
+                    display: none;
+                }
             }
         }
     }

@@ -29,9 +29,9 @@
 			<header class="main">
                 <h1><?php bloginfo('name'); ?></h1>
                 <nav>
-                    <a href=""><span>Animations</span></a>
-                    <a href=""><span>Drawings</span></a>
-                    <a href=""><span>About</span></a>
+                    <a href="#">Animations</a>
+                    <a href="#">Drawings</a>
+                    <a href="#">About</a>
                 </nav>
 			</header>
 
