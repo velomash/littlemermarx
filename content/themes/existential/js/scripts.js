@@ -1,11 +1,11 @@
+'use strict';
+
 (function ($, root, undefined) {
-	
-	$(function () {
-		
-		'use strict';
-		
-		// DOM ready, take it away
-		
-	});
-	
-})(jQuery, this);
+
+	$(function () {});
+})(
+
+// DOM ready, take it away
+
+jQuery, undefined);
+//# sourceMappingURL=scripts.js.map

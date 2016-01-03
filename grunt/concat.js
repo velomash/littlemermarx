@@ -1,6 +1,6 @@
 module.exports = {
-    dev: [
-    ],
-    prod: [
-    ]
+    js: {
+        src: ['src/js/*.js'],
+        dest: '<%= dist %>/js/scripts.es6.js'
+    }
 };

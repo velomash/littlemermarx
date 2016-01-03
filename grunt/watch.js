@@ -8,7 +8,7 @@ module.exports = {
 	},
 	scripts: {
 		files: ['src/js/**/*.js'],
-		tasks: ['copy:js'],
+		tasks: ['copy:js', 'js'],
 		options: {
 			livereload: 35729
 		}

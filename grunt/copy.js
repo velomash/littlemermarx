@@ -2,9 +2,9 @@ module.exports = {
 	js: {
 		files: [{
 		    expand: true,
-		    cwd: 'src/js',
+		    cwd: 'src/js/lib',
 		    src: ['**/*.js'],
-		    dest: '<%= dist %>/js'
+		    dest: '<%= dist %>/js/lib'
 		}]
 	},
     php: {
