@@ -27,13 +27,11 @@
 	<body <?php body_class(); ?>>
 
 			<header class="main">
-                <div class="container">
-                    <h1><?php bloginfo('name'); ?></h1>
-                    <nav>
-                        <a href="">Animations</a>
-                        <a href="">Drawings</a>
-                        <a href="">About</a>
-                    </nav>
-                </div>
+                <h1><?php bloginfo('name'); ?></h1>
+                <nav>
+                    <a href=""><span>Animations</span></a>
+                    <a href=""><span>Drawings</span></a>
+                    <a href=""><span>About</span></a>
+                </nav>
 			</header>
 
