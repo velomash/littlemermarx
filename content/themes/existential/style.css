@@ -348,18 +348,25 @@ a {
   color: #bf3524;
 }
 #lm-header {
+  position: relative;
+  display: block;
+  height: 182px;
   background-color: #f5f2ee;
   border-bottom: 2px solid #ffc70e;
-  display: flex;
-  align-items: flex-end;
   padding: 24px;
 }
 #lm-header .little-mermarx {
-  display: block;
+  position: absolute;
+  left: 24px;
+  bottom: -34px;
   width: 150px;
-  height: 200px;
+  height: 252px;
 }
 #lm-header h1 {
+  position: absolute;
+  display: block;
+  left: 174px;
+  bottom: 24px;
   margin: 0;
   background-image: url(./assets/littleMermarxScript.png);
   background-repeat: no-repeat;
@@ -376,8 +383,9 @@ a {
   }
 }
 #lm-header nav {
-  flex: 1;
-  text-align: right;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
 }
 #lm-header nav a {
   display: inline-block;
@@ -386,6 +394,37 @@ a {
   padding-left: 24px;
   padding-top: 40px;
   padding-bottom: 7px;
+}
+@media (max-width: 824px) {
+  #lm-header {
+    height: 92px;
+    padding: 12px;
+  }
+  #lm-header .little-mermarx {
+    width: 50px;
+    height: 131px;
+    bottom: -18px;
+  }
+  #lm-header h1 {
+    left: 102px;
+    background-image: url(./assets/littleMermarxScript.png);
+    background-repeat: no-repeat;
+    width: 233px;
+    height: 56px;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+  #lm-header nav {
+    bottom: 12px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 824px) and only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 824px) and only screen and (min--moz-device-pixel-ratio: 2), (max-width: 824px) and only screen and (-o-min-device-pixel-ratio: 2/1), (max-width: 824px) and only screen and (min-device-pixel-ratio: 2), (max-width: 824px) and only screen and (min-resolution: 192dpi), (max-width: 824px) and only screen and (min-resolution: 2dppx) {
+  #lm-header h1 {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url(./assets/littleMermarxScript@2x.png);
+    background-size: 233px 56px;
+  }
 }
 .home article {
   padding-bottom: 12px;
