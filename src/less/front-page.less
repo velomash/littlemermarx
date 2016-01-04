@@ -29,7 +29,7 @@
                 background-size: cover;
                 background-position: center;
             }
-            @media (min-width: 800px) and (max-width: 1024px) {
+            @media (min-width: 1025px) {
                 figure {
                     padding-bottom: 22%;
                 }
@@ -37,12 +37,22 @@
                     display: none;
                 }
             }
+            @media (min-width: 800px) and (max-width: 1024px) {
+                figure {
+                    padding-bottom: 22%;
+                }
+                .image-5,
+                .image-4 {
+                    display: none;
+                }
+            }
             @media (min-width: 300px) and (max-width: 799px) {
                 figure {
                     padding-bottom: 28%;
                 }
+                .image-5,
                 .image-4,
-                .image-5 {
+                .image-3 {
                     display: none;
                 }
             }

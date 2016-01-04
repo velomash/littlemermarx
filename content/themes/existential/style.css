@@ -418,7 +418,7 @@ a {
   background-size: cover;
   background-position: center;
 }
-@media (min-width: 800px) and (max-width: 1024px) {
+@media (min-width: 1025px) {
   .home article .image-container figure {
     padding-bottom: 22%;
   }
@@ -426,12 +426,22 @@ a {
     display: none;
   }
 }
+@media (min-width: 800px) and (max-width: 1024px) {
+  .home article .image-container figure {
+    padding-bottom: 22%;
+  }
+  .home article .image-container .image-5,
+  .home article .image-container .image-4 {
+    display: none;
+  }
+}
 @media (min-width: 300px) and (max-width: 799px) {
   .home article .image-container figure {
     padding-bottom: 28%;
   }
+  .home article .image-container .image-5,
   .home article .image-container .image-4,
-  .home article .image-container .image-5 {
+  .home article .image-container .image-3 {
     display: none;
   }
 }
