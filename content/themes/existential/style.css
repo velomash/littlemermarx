@@ -397,33 +397,25 @@ a {
 }
 @media (max-width: 824px) {
   #lm-header {
-    height: 92px;
-    padding: 12px;
+    padding: 0;
+    height: 72px;
   }
   #lm-header .little-mermarx {
-    width: 50px;
-    height: 131px;
+    left: 20px;
     bottom: -18px;
+    width: 50px;
+    height: 85px;
   }
   #lm-header h1 {
-    left: 102px;
-    background-image: url(./assets/littleMermarxScript.png);
-    background-repeat: no-repeat;
-    width: 233px;
-    height: 56px;
-    overflow: hidden;
-    text-indent: -9999px;
+    left: 72px;
+    bottom: 11px;
+    width: 192px;
+    height: 46px;
+    background-size: 192px 46px;
   }
   #lm-header nav {
     bottom: 12px;
     font-size: 14px;
-  }
-}
-@media (max-width: 824px) and only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 824px) and only screen and (min--moz-device-pixel-ratio: 2), (max-width: 824px) and only screen and (-o-min-device-pixel-ratio: 2/1), (max-width: 824px) and only screen and (min-device-pixel-ratio: 2), (max-width: 824px) and only screen and (min-resolution: 192dpi), (max-width: 824px) and only screen and (min-resolution: 2dppx) {
-  #lm-header h1 {
-    /* on retina, use image that's scaled by 2 */
-    background-image: url(./assets/littleMermarxScript@2x.png);
-    background-size: 233px 56px;
   }
 }
 .home article {
